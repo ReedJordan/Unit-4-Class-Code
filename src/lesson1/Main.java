@@ -13,7 +13,8 @@ public class Main {
         System.out.println("See if you can guess the number!");
         int guess = input.nextInt();
 
-        while (guess != 4){
+        int secretNum = (int)(Math.random()*10+1);
+        while (guess != secretNum){
             System.out.println("Try again!");
             guess = input.nextInt();
         }
