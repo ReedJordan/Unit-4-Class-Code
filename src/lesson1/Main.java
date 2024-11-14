@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        guessMyNumber();
+        numberGuess();
         Scanner scan = new Scanner(System.in);
 
 
@@ -21,20 +21,21 @@ public class Main {
                 break;
             }
         }
-
-        public static void guessMyNumber() {
-
-            Scanner input = new Scanner(System.in);
-            System.out.println("See if you can guess the number!");
-            int guess = input.nextInt();
-
-            int secretNum = (int) (Math.random() * 10 + 1);
-            while (guess != secretNum) {
-                System.out.println("Try again!");
-                guess = input.nextInt();
-            }
-
-            System.out.println("Congratulations, you did it!");
-
-        }
     }
+
+    public static void numberGuess() {
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("See if you can guess the number!");
+        int guess = input.nextInt();
+
+        int secretNum = (int) (Math.random() * 10 + 1);
+        while (guess != secretNum) {
+            System.out.println("Try again!");
+            guess = input.nextInt();
+        }
+
+        System.out.println("Congratulations, you did it!");
+
+    }
+}
