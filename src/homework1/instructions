@@ -1,10 +1,13 @@
 Attach your .java file to the Google Classroom assignment. It must be called Unit4HW1.java
 
-Start code is at [https://github.com/WLHS-APCSA/Unit-4-Class-Code/tree/main/src/homework1](https://github.com/WLHS-APCSA/Unit-4-Class-Code/tree/main/src/homework1). You need to put your code in each method.
+Start code is at [https://github.com/WLHS-APCSA/Unit-4-Class-Code/tree/main/src/homework1](https://github.com/WLHS-APCSA
+/Unit-4-Class-Code/tree/main/src/homework1). You need to put your code in each method.
 
 **Problem 1: Guessing Game**
 
-Write a Java program that picks a random number between 1 and 100 and asks the user to guess it. For each guess, the program should tell the user whether the guess is too high, too low, or correct. The game should continue using a while loop until the user guesses the correct number.
+Write a Java program that picks a random number between 1 and 100 and asks the user to guess it. For each guess, the
+program should tell the user whether the guess is too high, too low, or correct. The game should continue using a while
+loop until the user guesses the correct number.
 
 Sample Output
 ```
@@ -18,9 +21,13 @@ Correct\! You've guessed the right number\!
 
 **Problem 2: Tired Turtle**
 
-Background: Imagine there's a turtle in a straight line path. Initially, it starts from position 0\. The turtle can move forward a whole number of steps but has a peculiar behavior. Every time you command it to move, it moves a certain number of steps, but gets tired and moves half the number of steps the next time, and then half of that the next time, and so on. The turtle stops moving when it can't move a full step anymore.
+Background: Imagine there's a turtle in a straight line path. Initially, it starts from position 0. The turtle can move
+ forward a whole number of steps but has a peculiar behavior. Every time you command it to move, it moves a certain
+ number of steps, but gets tired and moves half the number of steps the next time, and then half of that the next time,
+ and so on. The turtle stops moving when it can't move a full step anymore.
 
-Problem: Write a Java program that asks the user how many steps they want the turtle to take in its first move. Then calculate and print how many total steps the turtle took until it stopped, using a while loop.
+Problem: Write a Java program that asks the user how many steps they want the turtle to take in its first move. Then
+calculate and print how many total steps the turtle took until it stopped, using a while loop.
 
 Sample output:
 
@@ -39,7 +46,9 @@ Total \= 10 \+ 5 \+ 2 \+ 1 \+ 0 \= 18 steps
 
 **Problem 3: Not Tamagotchi**
 
-Background: You have a virtual pet, and it gets hungry over time. Every hour, its hunger level increases. However, you can feed the pet to decrease its hunger level. If the hunger level reaches a certain threshold, your pet will become unhappy.
+Background: You have a virtual pet, and it gets hungry over time. Every hour, its hunger level increases. However, you
+can feed the pet to decrease its hunger level. If the hunger level reaches a certain threshold, your pet will become
+unhappy.
 
 Problem: Write a Java program to simulate the hunger level of your virtual pet over time.
 
