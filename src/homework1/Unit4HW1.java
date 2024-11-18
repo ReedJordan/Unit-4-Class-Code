@@ -6,8 +6,8 @@ import java.util.Scanner;
 public class Unit4HW1 {
 
     public static void main(String[] args) {
-        //guessingGame();
-        //tiredTurtle();
+        guessingGame();
+        tiredTurtle();
         tomaNOTchi();
 
     }
