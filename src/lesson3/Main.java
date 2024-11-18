@@ -39,6 +39,16 @@ public class Main {
             }
         System.out.println("The number of vowels in "+ word +" is "+ count);
     }
-
-
+    
+    public static void substringReverser(){
+        String original = "backwards";
+        String reversed = "";
+        for (int i = 0; i < original.length(); i++){
+            String single = original.substring(i, i + 1);
+            reversed = single + reversed;
+        }
+        System.out.println("Original String: "+ original);
+        System.out.println("Reversed String: "+ reversed);
+        
+    }
 }
