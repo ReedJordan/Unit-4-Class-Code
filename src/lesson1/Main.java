@@ -4,9 +4,8 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        numberGuess();
+        //guessMyNumber();
         Scanner scan = new Scanner(System.in);
-
 
         int startValue = 0;
         while (startValue < 10) {
@@ -14,8 +13,9 @@ public class Main {
             startValue++;
         }
 
+
         while (true) {
-            System.out.println("Enter a number: ");
+            System.out.print("Enter a number: ");
             int userNum = scan.nextInt();
             if (userNum == 8) {
                 break;
@@ -23,19 +23,19 @@ public class Main {
         }
     }
 
-    public static void numberGuess() {
-
+    public static void guessMyNumber() {
         Scanner input = new Scanner(System.in);
+        System.out.println("I'm thinking of a number between 1 and 10.");
         System.out.println("See if you can guess the number!");
-        int guess = input.nextInt();
-
-        int secretNum = (int) (Math.random() * 10 + 1);
-        while (guess != secretNum) {
+        int secretNumber = (int) (Math.random() * 10 + 1);
+        // for debugging System.out.println("Test: "+secretNumber);
+        System.out.print("Enter your guess: ");
+        int userGuess = input.nextInt();
+        while (secretNumber != userGuess) {
             System.out.println("Try again!");
-            guess = input.nextInt();
+            System.out.print("Enter your guess: ");
+            userGuess = input.nextInt();
         }
-
-        System.out.println("Congratulations, you did it!");
-
+        System.out.println("Correct!");
     }
 }
