@@ -33,39 +33,20 @@ public class Unit4HW2 {
         String counted = str;
         
         for (x = 0; x < counted.length(); x++){
-            String isA = counted.substring(x, x + 1);
-            if (isA.equals("a") || isA.equals("A")){
+            String isVowel = counted.substring(x, x + 1);
+            if (isVowel.equals("a") || isVowel.equals("A")){
                 aCount++;
-            }
-        }
-        
-        for (x = 0; x < counted.length(); x++){
-            String isE = counted.substring(x, x + 1);
-            if (isE.equals("e") || isE.equals("E")){
+            }else if (isVowel.equals("e") || isVowel.equals("E")){
                 eCount++;
-            }
-        }
-        
-        for (x = 0; x < counted.length(); x++){
-            String isI = counted.substring(x, x + 1);
-            if (isI.equals("i") || isI.equals("i")){
+            }else if (isVowel.equals("i") || isVowel.equals("I")){
                 iCount++;
-            }
-        }
-        
-        for (x = 0; x < counted.length(); x++){
-            String isO = counted.substring(x, x + 1);
-            if (is).equals("o") || isO.equals("O")){
+            }else if (isVowel.equals("o") || isVowel.equals("O")){
                 oCount++;
-            }
-        }
-        
-        for (x = 0; x < counted.length(); x++){
-            String isU = counted.substring(x, x + 1);
-            if (isU.equals("u") || isU.equals("U")){
+            }else if (isVowel.equals("u") || isVowel.equals("U")){
                 uCount++;
             }
         }
+        
         
         System.out.println("Number of a's: "+ aCount);
         System.out.println("Number of e's: "+ eCount);
