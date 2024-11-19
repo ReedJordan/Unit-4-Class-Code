@@ -31,6 +31,7 @@ public class Unit4HW2 {
         int oCount = 0;
         int uCount = 0;
         String counted = str;
+        int x = 0;
         
         for (x = 0; x < counted.length(); x++){
             String isVowel = counted.substring(x, x + 1);
