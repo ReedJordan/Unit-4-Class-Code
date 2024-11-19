@@ -3,10 +3,6 @@ package lesson4;
 
 public class Main {
     public static void main(String[] args){
-    doubleForLoops();
-    }
-
-    public static void doubleForLoops(){
         
         for (int outer = 1; outer < 5; outer++){
             for (int inner = 1; inner < 3; inner ++){
