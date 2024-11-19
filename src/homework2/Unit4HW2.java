@@ -58,6 +58,41 @@ public class Unit4HW2 {
     }
 
     public static void palindromeChecker(String str) {
+        String checkered = str;
+        String spaceless = "";
+        String singular = "";
+        String reversed = "";
+        String single = "";
+        char validChecker = ' ';
+        int charAscii = 0;
+        boolean invalid = false;
+        
+        for (int i = 0; i < checkered.length(); i++){
+            singular = checkered.substring(i, i + 1);
+            validChecker = checkered.charAt(i);
+            charAscii = validChecker;
+            
+            if (charAscii != 32){
+                spaceless = spaceless + singular;
+            }
+            if ((33 <= charAscii && charAscii <= 64) || (91 <= charAscii && charAscii <= 96) || (123 <= charAscii)){
+                invalid = true;
+                break;
+            }
+        }
+        
+        for (int p = 0; p < spaceless.length(); p++){
+            single = spaceless.substring(p, p + 1);
+            reversed = single + reversed;
+        }
+
+        if (invalid){
+            System.out.println("Error: Invalid character found in "+ checkered);
+        }else if (reversed.equals(spaceless)){
+            System.out.println(checkered +" is a palindrome.");
+        }else{
+            System.out.println(checkered +" is not a palindrome.");
+        }
         
     }
 }
