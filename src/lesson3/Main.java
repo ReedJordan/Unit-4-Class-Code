@@ -7,6 +7,8 @@ public class Main {
         substringReverser();
     }
 
+
+
     public static void substringFinder() {
 
         String word = "sunflower";
@@ -37,8 +39,8 @@ public class Main {
             }
             System.out.println("The number of vowels in " + word + " is " + count);
         }
-
-        public static void substringReverser () {
+    }
+        private static void substringReverser () {
             String original = "backwards";
             String reversed = "";
             for (int i = 0; i < original.length(); i++) {
@@ -49,4 +51,4 @@ public class Main {
             System.out.println("Reversed String: " + reversed);
 
         }
-    }
+}

@@ -1,0 +1,13 @@
+Problem 1
+
+Create a game of Woodle (play.woodle.today). It is like Wordle, but feedback is just how many letters are in the correct
+location, and how many are correct, but in the wrong location. Make sure to not have duplicate letters count twice (if
+you choose DINKS and the word is DRUID, it should say the D is in the correct location, but not repeat and say it is in
+the incorrect location also).
+
+Hard code a single 5 letter word as the answer (although your code should work with ANY word)
+Each time the user enters a guess, display the required information back to them.
+When they guess correctly, display how many tries it took them to get the answer.
+You may not use any String functions other than substring, equals , or indexOf.
+
+
